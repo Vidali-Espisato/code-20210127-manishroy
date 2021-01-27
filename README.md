@@ -12,6 +12,7 @@ Since, the json data can be of a gigantic scale, I considered using Python's ijs
 
     python main.py
     
-   ##### Note: 1. The program is built into modules which can be integrated directly into other programs.
-   #####      2. A sample data.json file is provided to take care of the structure of data provided.
+  ##### Note: 
+   1. The program is built into modules which can be integrated directly into other programs.
+   2. A sample data.json file is provided to take care of the structure of data provided.
     
