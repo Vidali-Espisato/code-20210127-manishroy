@@ -10,18 +10,18 @@ class Calculator:
 			}
 	
 	def __init__(self, weight, height):
-		self.height = height
+		self.height = height / 100
 		self.weight = weight
-		self.calculate()
+		self.bmi = self.calculate()
 
 	def calculate(self):
-		self.bmi = round(self.weight / (self.height ** 2), 2)
-		self.category, self.risk = self.ranges[list(filter(lambda x: x[0] <= self.bmi < x[1], self.ranges))[0]]
-		return self.bmi
+		bmi = round(self.weight / (self.height ** 2))
+		self.category, self.risk = self.ranges[list(filter(lambda x: x[0] <= bmi < x[1], self.ranges))[0]]
+		return bmi
 
-	def get_category(self):
-		return self.category
+	# def get_category(self):
+	# 	return self.category
 	
-	def get_risk(self):
-		return self.risk
+	# def get_risk(self):
+	# 	return self.risk
 
